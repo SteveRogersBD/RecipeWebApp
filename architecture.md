@@ -35,3 +35,33 @@ recipe-app/
 ├── docker-compose.yml
 ├── README.md
 └── .gitignore
+```
+
+┌─────────────┐          ┌────────────┐         ┌─────────────┐
+│   Users     │◄──────┐  │  Recipes   │◄─────┐  │   Categories │
+├─────────────┤       │  ├────────────┤      │  ├─────────────┤
+│ id (PK)     │       └─▶│ id (PK)    │      └─▶│ id (PK)      │
+│ name        │          │ title      │         │ name         │
+│ email       │          │ description│         └─────────────┘
+│ password    │          │ image_url  │
+│ created_at  │          │ user_id (FK) ─┐
+└─────────────┘          └────────────┬─┘
+                                      │
+                              ┌───────▼────────┐
+                              │  Ingredients   │
+                              ├────────────────┤
+                              │ id (PK)        │
+                              │ name           │
+                              │ quantity       │
+                              │ recipe_id (FK) │
+                              └────────────────┘
+
+┌────────────────────┐
+│   Favorites        │
+├────────────────────┤
+│ id (PK)            │
+│ user_id (FK)       │
+│ recipe_id (FK)     │
+└────────────────────┘
+
+
