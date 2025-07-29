@@ -68,4 +68,68 @@ cd recipehub/frontend
 npm install
 
 # Start the development server
-npm run dev
+npm run dev 
+```
+
+### 2️⃣ Backend Setup
+```bash
+# Navigate to backend folder
+cd ../backend
+
+# Configure database (application.properties or .yml)
+spring.datasource.url=jdbc:mysql://localhost:3306/recipehub
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+# Run the application
+./mvnw spring-boot:run
+```
+
+## 🤝 Contribution Guidelines
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository  
+2. Create a new branch  
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes  
+   ```bash
+   git commit -m "Add your message"
+   ```
+4. Push to the branch  
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a **Pull Request**
+
+---
+
+### 🧑‍💻 Code Style
+
+- Follow standard **Java conventions** for backend.
+- Use **Prettier** + **ESLint** for consistent frontend formatting.
+- Write clear, concise **commit messages**.
+- Include **comments** where necessary for complex logic.
+
+---
+
+### 🐞 Issues & Discussions
+
+- Use [Issues](https://github.com/your-username/recipehub/issues) to report bugs or suggest new features.
+- Join the conversation in [Discussions](https://github.com/your-username/recipehub/discussions) if enabled.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+- Inspired by the joy of home cooking.
+- Thanks to open-source libraries and the developer community!
+
