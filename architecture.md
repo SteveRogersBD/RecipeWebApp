@@ -64,7 +64,7 @@ recipe-app/
   - **One-to-many**: `user → recipes`
   - **Many-to-many**: `recipes ↔ ingredients`
 
-[Er Diagram](er_dia.005Z.png)
+![Er Diagram](er_dia.005Z.png)
 ---
 
 ## 📡 REST API Overview
